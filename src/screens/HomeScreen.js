@@ -1,13 +1,34 @@
 import React from 'react';
-import { Text, StyleSheet } from 'react-native';
-
-const HomeScreen = () => {
-  return <Text style={styles.text}>HomeScreen</Text>;
+import reactDom from 'react-dom';
+import { Text, StyleSheet,View,Button,TouchableOpacity } from 'react-native';
+   
+const HomeScreen = (props) => { 
+  return (
+    <View>
+      <Text style={styles.text}>Welcome to the HomeScreen</Text>
+      <Button
+      onPress={()=>props.navigation.navigate('Components')}
+      title='Go to Components Demo'/>
+      <Button
+      onPress={()=>props.navigation.navigate('List')}
+      title='Go to List Demo'/>
+      <Button
+      onPress={()=>props.navigation.navigate('Image')}
+      title='Go to Image List'/>
+      <Button
+      onPress={()=>props.navigation.navigate('Counter')}
+      title='Go To Counter Screen'/>
+      <Button
+      onPress={()=>props.navigation.navigate('Color')}
+      title='Go To Color Screen'/>
+    </View>
+  
+  )
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30,
+    fontSize: 20,
   },
 });
 
