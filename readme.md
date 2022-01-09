@@ -38,3 +38,15 @@ about any kind of element
 
 ### managing state
 - pass a call back function to the child,then the child component extract the variable and make a change,which further make the parent component to rerender,further it rerenders all the child components .
+
+
+### Reducers
+
+- Function that manages changes to an object
+- Function that gets called with two objects
+- Argument #1 - object that has all our state in it
+- Argument #2 - object that describe the update we want to make
+- we look at argument #2 and use it to decide how to change argument #1
+- (NOTE)
+   - we never change argument #1 directly
+   - we must always return a value to be used as argument #1
