@@ -29,3 +29,12 @@ about any kind of element
    <Text>Go to List Demo</Text>
 </TouchableOpacity> 
 ```
+
+### By applying state change ask these questions to yourself:
+- what piece of data is changing in our app
+- what type of data is it
+- what is the data's starting (default) value ?
+
+
+### managing state
+- pass a call back function to the child,then the child component extract the variable and make a change,which further make the parent component to rerender,further it rerenders all the child components .
