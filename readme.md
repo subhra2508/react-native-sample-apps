@@ -60,3 +60,12 @@ const state = {
 {colorToChange:'red',amount:15}
 
 ```
+
+reducer(state,action)
+the action object has two things
+
+type : string that describes the exact change operation we want to make
+payload :  some data that is critical to the change operation
+
+ 
+
