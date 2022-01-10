@@ -50,3 +50,22 @@ about any kind of element
 - (NOTE)
    - we never change argument #1 directly
    - we must always return a value to be used as argument #1
+- so basically we have a object and another obj to change the 1st object
+```js
+const state = {
+   red:0,green:0,blue:0
+}
+
+//2nd one
+{colorToChange:'red',amount:15}
+
+```
+
+reducer(state,action)
+the action object has two things
+
+type : string that describes the exact change operation we want to make
+payload :  some data that is critical to the change operation
+
+ 
+
